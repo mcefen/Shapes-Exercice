@@ -1,0 +1,99 @@
+body {
+  position: relative;
+}
+.container {
+  display: flex;
+  content: center;
+  width: 479px;
+  height: 279px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 600px;
+
+  background-color: aqua;
+}
+.container:hover {
+  color: blue;
+}
+
+h2 {
+  margin-left: 130px;
+}
+
+.triangle {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: -300px;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-bottom: 100px solid #ccff00;
+
+  position: absolute;
+}
+.triangle:hover {
+  border-bottom: 100px solid black;
+}
+#move-up:hover .triangle {
+  transform: translate(40px, -30px);
+  -webkit-transform: translate(40px, -30px);
+  -o-transform: translate(40px, -30px);
+  -moz-transform: translate(40px, -30px);
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  margin-left: -140px;
+  width: 100px;
+  height: 100px;
+  border: 100%px solid transparent;
+  background: red;
+  position: absolute;
+}
+.square:hover {
+  background: green;
+}
+#move-up:hover .square {
+  transform: translate(20%, -15%);
+  -webkit-transform: translate(20%, -15%);
+  -o-transform: translate(20%, -15%);
+  -moz-transform: translate(20%, -15%);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-left: 5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #5200ff;
+  position: absolute;
+}
+.circle:hover {
+  background: #ccff00;
+  top: -10%;
+  left: 80%;
+}
+#move-up:hover .circle {
+  transform: translate(20%, -10%);
+  -webkit-transform: translate(20%, -10%);
+  -o-transform: translate(20%, -10%);
+  -moz-transform: translate(20%, -10%);
+}
+
+#btn {
+  width: 64px;
+  height: 38px;
+
+  background-color: #c4c4c4;
+  margin-top: 235px;
+  margin-left: -120px;
+  text-align: center;
+  padding: 1px;
+}
